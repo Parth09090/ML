@@ -4,7 +4,6 @@
 - Does **not** consider any inherent order.  
 - Used for **nominal data** (e.g., names, colors, cities).  
 
----
 
 ## **When to Use Label Encoding?**
 
@@ -24,7 +23,6 @@
 - Used for **ordinal data** (e.g., education levels, satisfaction ratings).  
 - Requires **manual ordering** based on domain knowledge.
 
----
 
 ## **When to Use Ordinal Encoding?**
 
