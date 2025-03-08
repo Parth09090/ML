@@ -60,6 +60,26 @@ In cases where a categorical feature has **too many unique values** (high cardin
 ## Steps to Perform OHE with Most Frequent Categories  
 
 1. **Identify the top N most frequent categories** in a feature.  
-2. **One-hot encode only these N categories**, treating less frequent ones as "Other."  
+2. **One-hot encode only these N categories**, treating less frequent ones as "Other."
+
+---
+
+# Why Not Use Pandas for One-Hot Encoding Instead of Scikit-Learn?
+
+## **Pandas `get_dummies()` vs. Scikit-Learn `OneHotEncoder`**
+
+| Feature | Pandas `get_dummies()` | Scikit-Learn `OneHotEncoder` |
+|---------|------------------------|------------------------------|
+| **Ease of Use** | ✅ Simple & quick | ❌ Requires fitting |
+| **Handles New Categories** | ❌ No | ✅ Yes (`handle_unknown='ignore'`) |
+| **Works with Pipelines** | ❌ No | ✅ Yes |
+| **Supports Sparse Matrices** | ❌ No | ✅ Yes (`sparse=True`) |
+| **Handles Large Datasets** | ❌ Inefficient | ✅ Memory-efficient |
+| **Limits Categories (High Cardinality)** | ❌ No | ✅ Yes |
+
+## **When to Use?**
+
+- ✅ **Use `pd.get_dummies()`** for **EDA or small datasets**.  
+- ✅ **Use `OneHotEncoder`** for **ML pipelines, large datasets, and handling unseen categories**.  
 
 
