@@ -12,13 +12,14 @@ Normalization is a **feature scaling technique** that transforms numerical data 
 
 ---
 
-## **📊 Different Types of Normalization**
+## **Different Types of Normalization**
 
 ### **1️⃣ Min-Max Normalization (Feature Scaling)**
 - **Formula:**  
-  \[
-  X_{\text{normalized}} = \frac{X - X_{\min}}{X_{\max} - X_{\min}}
-  \]
+  $$
+X_{\text{normalized}} = \frac{X - X_{\min}}{X_{\max} - X_{\min}}
+$$
+
 - **Scales values between a fixed range** (commonly `[0,1]` or `[-1,1]`).
 - **Sensitive to outliers** because extreme values affect \( X_{\min} \) and \( X_{\max} \).
 
