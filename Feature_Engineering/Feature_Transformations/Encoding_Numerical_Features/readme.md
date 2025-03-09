@@ -29,4 +29,4 @@ Encoding numerical features involves converting **continuous numerical data** in
 4. **Custom Encoding**  
    - Applying domain-specific logic (e.g., salary groups: `Low`, `Medium`, `High`).  
 
- **Key Takeaway:** Encoding numerical features makes data more interpretable, improves model training, and helps prevent skewed distributions from affecting predictions. 🚀
+ **Key Takeaway:** Encoding numerical features makes data more interpretable, improves model training, and helps prevent skewed distributions from affecting predictions. 
