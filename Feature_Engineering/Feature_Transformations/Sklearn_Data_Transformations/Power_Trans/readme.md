@@ -43,4 +43,4 @@ Extends Box-Cox to handle **zero and negative values**.
 | **Box-Cox**   | Positive values only | Right-skewed data |
 | **Yeo-Johnson** | Positive & negative values | Data with zeros/negatives |
 
-Both are implemented in **scikit-learn’s** `PowerTransformer` for preprocessing data before applying machine learning models. 🚀
+Both are implemented in **scikit-learn’s** `PowerTransformer` for preprocessing data before applying machine learning models.
