@@ -1,6 +1,6 @@
-# **Data Transformations in Scikit-learn**  
+# **Data Transformations **  
 
-Data transformations in Scikit-learn are preprocessing techniques used to **modify the distribution of data, handle skewness, and improve the performance** of machine learning models. This process ensures that data is not just fed to the model but is **crafted and tailored** to enhance its predictive prowess. By applying **mathematical or custom functions**, we transform raw data into a more suitable format, improving **model accuracy, handling outliers, and ensuring algorithms like linear regression, k-means clustering, and PCA perform optimally**.  
+Data transformations are preprocessing techniques used to **modify the distribution of data, handle skewness, and improve the performance** of machine learning models. This process ensures that data is not just fed to the model but is **crafted and tailored** to enhance its predictive prowess. By applying **mathematical or custom functions**, we transform raw data into a more suitable format, improving **model accuracy, handling outliers, and ensuring algorithms like linear regression, k-means clustering, and PCA perform optimally**.  
 
 ---
 
