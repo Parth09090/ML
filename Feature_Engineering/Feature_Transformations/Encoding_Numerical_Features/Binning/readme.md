@@ -1,4 +1,4 @@
-# **Binning (Discretization) Explained**  
+# **Binning (Discretization)**  
 
 ## **What is Binning?**  
 Binning, also called **discretization**, is the process of converting **continuous numerical features** into **discrete categories (bins)**. Instead of treating each unique numerical value separately, binning groups values into predefined ranges.  
@@ -75,4 +75,4 @@ Manually defines bins based on **domain knowledge** and specific requirements.
 ---
 
 ## **🔹 Conclusion:**  
-Each binning technique has its advantages. **Equal-width** is simple, **equal-frequency** handles skewed data well, **K-Means** is data-driven, and **custom binning** provides domain-relevant insights. Choosing the right method depends on the **data distribution and the problem at hand**. 🚀
+Each binning technique has its advantages. **Equal-width** is simple, **equal-frequency** handles skewed data well, **K-Means** is data-driven, and **custom binning** provides domain-relevant insights. Choosing the right method depends on the **data distribution and the problem at hand**. 
