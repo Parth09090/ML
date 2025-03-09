@@ -7,7 +7,7 @@ Complete Case Analysis (CCA), also known as **listwise deletion**, involves remo
 - When the dataset has very few missing values (less than 5-10%).  
 - When missing data is **completely random** (Missing Completely at Random - MCAR), meaning the missingness does not depend on observed or unobserved data.  
 - When removing missing values does not significantly reduce the sample size.  
-
+- Distribution remains nearly same before and after.
 ## **Advantages**  
  **Simple & Easy:** No complex imputation techniques are required.  
  **Prevents Bias:** If data is missing completely at random (MCAR), removing missing values does not introduce bias.  
