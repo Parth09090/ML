@@ -17,7 +17,6 @@ Missing category imputation replaces missing categorical values with a placehold
  Features with high cardinality where mode imputation is unsuitable.  
 
 ### **Avoid when:**  
- The missingness is purely random and has no pattern.  
+ The missingness is purely random and has no pattern.  MCAR
  The categorical variable has a strict ordinal relationship.  
 
-Need a better approach for your data? 🚀  
