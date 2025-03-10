@@ -1,30 +1,28 @@
-# **Automatic Selection Imputer**  
-The **Automatic Selection Imputer** is a technique that **automatically selects an appropriate imputation strategy** for each feature based on its data type or missing patterns. It is commonly used in data preprocessing pipelines to streamline the handling of missing values.
+# **Automatic Selection Imputer Using GridSearchCV**  
+In **Automatic Selection Imputation**, we use **GridSearchCV** to find the best imputation strategy by testing multiple methods and selecting the one that optimizes model performance.
 
 ---
 
 ## **How It Works**  
-- Automatically detects **numerical and categorical** variables.  
-- Applies a **predefined imputation strategy** for each variable type:  
-  - **Numerical Features** → Typically uses mean, median, or mode imputation.  
-  - **Categorical Features** → Uses mode (most frequent) or a placeholder value (e.g., "Missing").  
-- The user can specify whether to apply the imputation to **all variables** or **only those with missing values** (`missing_only=True`).  
-- Reduces manual effort by automatically identifying and handling missing data.
+1. **Define multiple imputation strategies** (e.g., mean, median, mode, constant value).  
+2. **Use GridSearchCV** to test each strategy during cross-validation.  
+3. **Select the best imputation method** based on the model’s performance on validation data.  
+4. **Apply the best imputation strategy** to preprocess missing values before training.  
 
 ---
 
-## **Benefits**  
-- **Reduces manual work** by selecting the best imputation method automatically.  
-- **Ensures consistency** in handling missing values across different variable types.  
-- **Works well in automated machine learning (AutoML) pipelines**.  
-- **Prevents errors** that might occur when manually selecting imputation strategies.
+## **Benefits** 
+- **Finds the best imputation method automatically** instead of relying on assumptions.  
+- **Optimizes model performance** by selecting the most effective strategy.  
+- **Works well in ML pipelines** as part of hyperparameter tuning.  
+- **Handles both numerical and categorical missing values.**  
 
 ## **When to Apply?** 
-- When working with **large datasets** with mixed data types.  
-- When using **automated ML pipelines** where manual imputation selection is impractical.  
-- When missing data patterns are **not well understood** at the start of preprocessing.
+- When you **don’t know which imputation method** is best for a given dataset.  
+- When working with **large datasets** where manual selection is impractical.  
+- When aiming to **maximize model accuracy** by tuning preprocessing steps.  
 
 ## **Disadvantages**  
-- **Less control** over imputation methods.  
-- **Might not be optimal for specific datasets** where a custom strategy is preferred.  
-- **May introduce bias** if the automatically chosen strategy does not fit the data distribution.
+- **Computationally expensive** – Testing multiple strategies increases training time.  
+- **May overfit** if the dataset is small.  
+- **Needs careful validation** – Performance improvement should generalize to unseen data.  
