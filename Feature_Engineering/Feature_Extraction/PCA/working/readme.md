@@ -1,4 +1,4 @@
-# Principal Component Analysis (PCA) Explained Simply  
+# Principal Component Analysis (PCA)
 
 ## What is PCA?  
 Principal Component Analysis (PCA) is a technique used to **reduce the number of features (dimensions) in a dataset** while keeping the most important information. It helps simplify data, speed up computations, and improve model performance.  
