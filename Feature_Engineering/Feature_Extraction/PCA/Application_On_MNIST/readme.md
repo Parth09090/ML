@@ -1,4 +1,4 @@
-# Principal Component Analysis (PCA) – When to Use & When Not to Use  
+# Principal Component Analysis (PCA)   
 
 ## When to Use PCA?  
  **Dimensionality Reduction:** Useful when dealing with high-dimensional data with redundant features.  
